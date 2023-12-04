@@ -1,1 +1,39 @@
-/* You can add global styles to this file, and also import other style files */
+:root{
+    --White:white;
+    --Black:black;
+    --transparentBlack:rgba(2, 2, 2, 0.464);
+    /*sizings*/
+    --xs-sizing:8px;
+    --s-sizing:16px;
+    --m-sizing:24px;
+    --l-sizing:32px;
+    --xl-sizing:64px;
+    --xxl-sizing:120px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Megrim&display=swap');
+
+body{
+    font-family: 'Lexend Exa';
+}
+
+h1{
+    font-family: 'Megrim';
+    font-size: 232px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: var(--White);
+}
+a{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: var(--s-sizing);
+}

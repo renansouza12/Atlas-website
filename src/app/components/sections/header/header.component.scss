@@ -1,0 +1,91 @@
+@import url(../../../../styles.scss);
+header{
+    position: fixed;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    padding: 1rem;
+
+    img{
+        width: 50px;
+        cursor: pointer;
+    }
+    .nav{
+        display: flex;
+        gap: 1rem;
+        a{
+            color: var(--White);
+            position: relative;
+            transition: .5s;
+            padding: 5px;
+        }
+        a:hover{
+            transition-delay: 0.5s;
+            background-color: var(--White);
+            color: var(--Black);
+        }
+        a:after,a::before{
+            position: absolute;
+            content: '';
+            transition: .5s;
+        }
+        a:after{
+            top: 0;
+            right: 0;
+            height: 1px;
+            width: 0px;
+            transform: skewX(15deg);
+            background-color: var(--White);
+        }
+        a::before{
+            bottom: 0;
+            left: 0;
+            height: 1px;
+            width: 0px;
+            transform: skewX(15deg);
+            background-color:var(--White);
+        }
+        a:hover:after,a:hover:before{
+            width: 60px;
+        }
+    }
+}
+@media (max-width:425px) {
+    header{
+        bottom: 5%;
+        left: 20%;
+        justify-content: center;
+        gap: 10px;
+        background-color: var( --transparentBlack); 
+        backdrop-filter: blur( 4px );
+        width: 60vw;
+        height: 7vh;
+        border-radius: 3px;
+
+        img{
+            width: 30px;
+        }
+        .nav{
+            gap: var(--xs-sizing);
+            width: 100%;
+            a{
+                font-size: 10px;
+            }
+            a:hover{
+                background-color: transparent;
+                color: var(--White);
+            }
+            a:after,  a::before{
+                top: 0;
+                right: 0;
+                height: 0;
+                width: 0px;
+                transform: skewX(0);
+             
+            }
+
+        }
+    }
+}

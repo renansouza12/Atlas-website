@@ -1,0 +1,18 @@
+@media (max-width:1000px) {
+    .hero{
+        h1{
+            font-size: 150px;
+        }
+    }
+}
+@media (max-width:425px) {
+    .hero{
+        h1{ 
+            left: 35%;
+            top: -7%;
+            font-size: 90px;
+            width: 30%;
+            text-align: center;
+        }
+    }
+}
