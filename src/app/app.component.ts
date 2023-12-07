@@ -10,16 +10,14 @@ export class AppComponent implements OnInit{
     // smooth scroll
     const lenis = new Lenis()
 
-    lenis.on('scroll', (e:any) => {
-      console.log(e)
+    lenis.on('scroll', ScrollTrigger.update)
+
+    gsap.ticker.add((time)=>{
+      lenis.raf(time * 1000)
     })
 
-    function raf(time:any) {
-      lenis.raf(time)
-      requestAnimationFrame(raf)
+    gsap.ticker.lagSmoothing(0)
+    
     }
-
-    requestAnimationFrame(raf)
-      }
   
 }

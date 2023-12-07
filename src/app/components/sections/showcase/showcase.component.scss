@@ -17,3 +17,12 @@
         gap: var(--s-sizing);
     }
 }
+@media (max-width:1000px) {
+    .showcase{
+        .cards{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    }
+}
