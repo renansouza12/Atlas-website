@@ -8,16 +8,20 @@ import Lenis from '@studio-freight/lenis'
 export class AppComponent implements OnInit{
   ngOnInit(): void {
     // smooth scroll
+
     const lenis = new Lenis()
 
-    lenis.on('scroll', ScrollTrigger.update)
-
-    gsap.ticker.add((time)=>{
-      lenis.raf(time * 1000)
+    lenis.on('scroll', (e:any) => {
+      console.log(e)
     })
 
-    gsap.ticker.lagSmoothing(0)
-    
+    function raf(time:any) {
+      lenis.raf(time)
+      requestAnimationFrame(raf)
+    }
+
+    requestAnimationFrame(raf)
+
     }
   
 }
