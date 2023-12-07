@@ -1,0 +1,19 @@
+@import url(../../../../styles.scss);
+.showcase{
+    min-height: 100vw;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--Bg-color);
+
+    h2{
+        margin: 10% 0 5% 0;
+    }
+
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: var(--s-sizing);
+    }
+}

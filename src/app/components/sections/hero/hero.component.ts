@@ -1,10 +1,12 @@
 import { Component,OnInit } from '@angular/core';
 import { gsap } from "gsap";
-import SplitType from 'split-type'
+import SplitType from 'split-type';
+
+
 @Component({
   selector: 'app-hero',
   templateUrl: './hero.component.html',
-  styleUrls: ['./hero.component.scss','hero.responsive.component.scss']
+  styleUrls: ['./hero.component.scss','hero.responsive.component.scss'],
 })
 export class HeroComponent implements OnInit {
   ngOnInit(): void {
@@ -14,9 +16,10 @@ export class HeroComponent implements OnInit {
       opacity:0,
       stagger:.2,
       delay:.5,
-      duration: .5,
+      duration: .7,
       y:100
     })
+
   }
 
 }

@@ -1,6 +1,8 @@
 :root{
     --White:white;
     --Black:black;
+    --Bg-color:#3B3B3B;
+    --Bg-card:#313131;
     --transparentBlack:rgba(2, 2, 2, 0.464);
     /*sizings*/
     --xs-sizing:8px;
@@ -32,8 +34,18 @@ h1{
     text-transform: uppercase;
     color: var(--White);
 }
+h2{
+    color: var(--White);
+    font-size: 5vw;
+    font-weight: 100;
+}
+
 a{
     text-decoration: none;
     text-transform: capitalize;
     font-size: var(--s-sizing);
+}
+p{
+    color: var(--White);
+
 }
