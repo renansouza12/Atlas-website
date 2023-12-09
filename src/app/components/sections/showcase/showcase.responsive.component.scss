@@ -1,0 +1,12 @@
+@media (max-width:1000px) {
+    .showcase{
+        h2{
+            font-size: 7vw;
+        }
+        .cards{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    }
+}

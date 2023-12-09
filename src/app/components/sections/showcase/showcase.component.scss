@@ -8,6 +8,7 @@
     background-color: var(--Bg-color);
 
     h2{
+        font-size: 100px;
         margin: 10% 0 5% 0;
     }
 
@@ -15,14 +16,5 @@
         display: grid;
         grid-template-columns: repeat(2,1fr);
         gap: var(--s-sizing);
-    }
-}
-@media (max-width:1000px) {
-    .showcase{
-        .cards{
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
     }
 }

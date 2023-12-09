@@ -1,9 +1,7 @@
 import { Component,OnInit } from '@angular/core';
 import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import SplitType from 'split-type';
 
-gsap.registerPlugin(ScrollTrigger);
 @Component({
   selector: 'app-hero',
   templateUrl: './hero.component.html',
