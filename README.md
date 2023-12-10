@@ -1,5 +1,5 @@
 # Atlas websiter
-It's a simple lading page with some gsap and scrolltrigger animations in Angular with responsive sizes. I made this simple landing page with the objective to learn more about how to use use gsap and scrolltrigger animations with angular.
+It's a simple landing page with some gsap and scrolltrigger animations in Angular with responsive sizes. I made this simple landing page with the objective to learn more about how to use use gsap and scrolltrigger animations with angular.
 
 ####  Demo :https://atlas-page.netlify.app/
 
